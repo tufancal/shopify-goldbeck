@@ -1,0 +1,165 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Einzigartige Meisterwerke in Gold – Ihr unvergessliches Schmuckstück erwartet Sie!",
+            "heading_size": "h2"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Jetzt entdecken",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC00551_b314cfe0-b8d0-432f-9cc8-1d7ae1b04368.jpg",
+        "image_2": "shopify:\/\/shop_images\/DSC00942.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Topseller",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "a74f4c49-8cd7-42e5-83f3-749a59ba293f": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19599054766404__a74f4c49-8cd7-42e5-83f3-749a59ba293f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Über uns",
+            "heading_size": "h1"
+          }
+        },
+        "template--19599054766404__a74f4c49-8cd7-42e5-83f3-749a59ba293f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Willkommen bei Goldbeck Design! Wir sind leidenschaftliche Goldschmiede, die sich der Kunst der Handwerkskunst verschrieben haben. Unsere Vision ist es, zeitlose Schmuckstücke von höchster Qualität zu kreieren, die Ihre Persönlichkeit und Eleganz zum Ausdruck bringen. Jedes Stück, das wir herstellen, erzählt eine Geschichte und wird mit Liebe und Sorgfalt gefertigt. Tauchen Sie ein in unsere Welt des Goldes und entdecken Sie Schmuck, der für Sie gemacht ist.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--19599054766404__a74f4c49-8cd7-42e5-83f3-749a59ba293f-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Mehr erfahren",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19599054766404__a74f4c49-8cd7-42e5-83f3-749a59ba293f-heading-1",
+        "template--19599054766404__a74f4c49-8cd7-42e5-83f3-749a59ba293f-text-1",
+        "template--19599054766404__a74f4c49-8cd7-42e5-83f3-749a59ba293f-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC00828.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cd6e7125-5640-44e3-96af-6eaaa5c80fa2": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19599054766404__cd6e7125-5640-44e3-96af-6eaaa5c80fa2-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ringe"
+          }
+        },
+        "template--19599054766404__cd6e7125-5640-44e3-96af-6eaaa5c80fa2-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "anhanger"
+          }
+        },
+        "276a85d3-c024-41b8-a499-4a1afa7edb04": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19599054766404__cd6e7125-5640-44e3-96af-6eaaa5c80fa2-featured_collection-1",
+        "template--19599054766404__cd6e7125-5640-44e3-96af-6eaaa5c80fa2-featured_collection-2",
+        "276a85d3-c024-41b8-a499-4a1afa7edb04"
+      ],
+      "settings": {
+        "title": "Kategorien",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "a74f4c49-8cd7-42e5-83f3-749a59ba293f",
+    "cd6e7125-5640-44e3-96af-6eaaa5c80fa2"
+  ]
+}
