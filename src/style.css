@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./fonts/Inconsolata-Regular.ttf") format("truetype");
+  src: url("./fonts/Inconsolata-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./fonts/Inconsolata-Medium.ttf") format("truetype");
+  src: url("./fonts/Inconsolata-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("./fonts/Karla-SemiBold.ttf") format("truetype");
+  src: url("./fonts/Karla-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("./fonts/Karla-Bold.ttf") format("truetype");
+  src: url("./fonts/Karla-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("./fonts/Karla-ExtraBold.ttf") format("truetype");
+  src: url("./fonts/Karla-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+:root {
+  --font-family-heading: "Karla", Arial;
+  --font-family-copy: "Inconsolata", sans-serif;
+  
+  /* Shopify variables */
+  --font-heading-family: var(--font-family-heading);
+  --font-heading-weight: 700;
+}
