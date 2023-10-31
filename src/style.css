@@ -3,32 +3,32 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'Inter';
-	src: url('./fonts/Inter-Regular.ttf') format('truetype');
-	src: url('./fonts/Inter-Regular.woff2') format('woff2');
+	font-family: 'IBMPlexSans';
+	src: url('./fonts/IBMPlexSans-Regular.ttf') format('truetype');
+	src: url('./fonts/IBMPlexSans-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'JosefinSans';
-	src: url('./fonts/JosefinSans-SemiBold.ttf') format('truetype');
-	src: url('./fonts/JosefinSans-SemiBold.woff2') format('woff2');
+	font-family: 'IBMPlexSansCondensed';
+	src: url('./fonts/IBMPlexSansCondensed-Medium.ttf') format('truetype');
+	src: url('./fonts/IBMPlexSansCondensed-Medium.woff2') format('woff2');
 	font-weight: 600;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'JosefinSans';
-	src: url('./fonts/JosefinSans-Bold.ttf') format('truetype');
-	src: url('./fonts/JosefinSans-Bold.woff2') format('woff2');
+	font-family: 'IBMPlexSansCondensed';
+	src: url('./fonts/IBMPlexSansCondensed-Bold.ttf') format('truetype');
+	src: url('./fonts/IBMPlexSansCondensed-Bold.woff2') format('woff2');
 	font-weight: 700;
 	font-display: swap;
 }
 
 :root {
-	--font-family-heading: 'JosefinSans', Times New Roman;
-	--font-family-copy: 'Inter', sans-serif;
+	--font-family-heading: 'IBMPlexSansCondensed', Times New Roman;
+	--font-family-copy: 'IBMPlexSans', sans-serif;
 
 	/* Shopify variables */
 	--font-heading-family: var(--font-family-heading);
