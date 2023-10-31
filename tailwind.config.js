@@ -10,7 +10,12 @@ module.exports = {
       '4xl': '3.6rem',
       '5xl': '4.8rem',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+				heading: ['IBMPlexSansCondensed', 'Arial'],
+				copy: ['IBMPlexSans', 'Arial']
+			}
+    },
   },
   variants: {
     extend: {},

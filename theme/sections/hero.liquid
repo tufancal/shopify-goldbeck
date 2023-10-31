@@ -1,0 +1,44 @@
+{% liquid
+  assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+  assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+%}
+
+<section class="hero page-width page-width-desktop relative">
+  {{
+    section.settings.image
+    | image_url: width: 3840
+    | image_tag:
+      width: section.settings.image.width,
+      height: image_height,
+      widths: widths,
+      class: 'object-cover max-h-[32rem]'
+  }}
+  <div class="absolute left-4 top-4">
+    {% if section.settings.headline %}
+      <h1 class="font-heading">{{ section.settings.headline }}</h1>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Bild auswählen"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Überschrift"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}

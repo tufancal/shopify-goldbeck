@@ -27,7 +27,7 @@
 }
 
 :root {
-	--font-family-heading: 'IBMPlexSansCondensed', Times New Roman;
+	--font-family-heading: 'IBMPlexSansCondensed', Arial;
 	--font-family-copy: 'IBMPlexSans', sans-serif;
 
 	/* Shopify variables */
