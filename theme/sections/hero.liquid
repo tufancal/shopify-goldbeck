@@ -4,21 +4,33 @@
 %}
 
 <section class="hero page-width page-width-desktop relative">
-  {{
-    section.settings.image
-    | image_url: width: 3840
-    | image_tag:
-      width: section.settings.image.width,
-      height: image_height,
-      widths: widths,
-      class: 'object-cover max-h-[32rem]'
-  }}
-  <div class="page-width page-width-desktop scroll-trigger animate--fade-in absolute left-16 top-32 text-white lg:w-1/2">
+  <div class="relative after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:bg-white after:opacity-30 after:content-[''] after:dark:bg-black">
+    {{
+      section.settings.image
+      | image_url: width: 3840
+      | image_tag:
+        width: section.settings.image.width,
+        height: image_height,
+        widths: widths,
+        class: 'object-cover max-h-[32rem]'
+    }}
+  </div>
+  <div class="page-width page-width-desktop scroll-trigger animate--slide-in absolute left-16 top-32 lg:w-1/2">
     {% if section.settings.headline %}
-      <h1 class="font-heading uppercase text-white">{{ section.settings.headline }}</h1>
+      <h1 class="text-secondary-light dark:text-secondary-dark mb-6 font-heading uppercase">
+        {{ section.settings.headline }}
+      </h1>
     {% endif %}
     {% if section.settings.copy %}
-      <p class="font-copy">{{ section.settings.copy }}</p>
+      <p class="text-secondary-light dark:text-secondary-dark mb-6 font-copy">{{ section.settings.copy }}</p>
+    {% endif %}
+    {% if section.settings.buttonUrl and section.settings.buttonLabel %}
+      <a
+        class="text-secondary-light dark:text-secondary-dark bg-primary-light dark:bg-primary-dark focus-visible:outline-primary-light dark:focus-visible:outline-primary-dark inline-block px-8 py-5 font-heading text-base font-bold uppercase underline-offset-4 outline-offset-3 hover:underline focus-visible:outline focus-visible:shadow-none"
+        href="{{ section.settings.buttonUrl }}"
+      >
+        {{- section.settings.buttonLabel -}}
+      </a>
     {% endif %}
   </div>
 </section>
@@ -41,6 +53,17 @@
       "type": "text",
       "id": "copy",
       "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "buttonUrl",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "buttonLabel",
+      "label": "Linktext",
+      "default": "Jetzt entdecken"
     }
   ],
   "presets": [

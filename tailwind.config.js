@@ -14,16 +14,12 @@ module.exports = {
     extend: {
       colors: {
 				primary: {
-					dark: '#38320A',
+					dark: '#5F4842',
 					light: '#F1CE75'
 				},
 				secondary: {
-					dark: '#DADCE7',
+					dark: '#FFFFFF',
 					light: '#1B1914'
-				},
-				highlight: {
-					dark: '#443850',
-					light: '#8CDEDC'
 				}
 			},
       fontFamily: {
