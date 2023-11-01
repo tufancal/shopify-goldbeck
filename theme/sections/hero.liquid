@@ -13,9 +13,12 @@
       widths: widths,
       class: 'object-cover max-h-[32rem]'
   }}
-  <div class="absolute left-4 top-4">
+  <div class="page-width page-width-desktop scroll-trigger animate--fade-in absolute left-16 top-32 text-white lg:w-1/2">
     {% if section.settings.headline %}
-      <h1 class="font-heading">{{ section.settings.headline }}</h1>
+      <h1 class="font-heading uppercase text-white">{{ section.settings.headline }}</h1>
+    {% endif %}
+    {% if section.settings.copy %}
+      <p class="font-copy">{{ section.settings.copy }}</p>
     {% endif %}
   </div>
 </section>
@@ -33,6 +36,11 @@
       "type": "text",
       "id": "headline",
       "label": "Überschrift"
+    },
+    {
+      "type": "text",
+      "id": "copy",
+      "label": "Text"
     }
   ],
   "presets": [
