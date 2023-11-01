@@ -3,35 +3,41 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'IBMPlexSans';
-	src: url('./fonts/IBMPlexSans-Regular.ttf') format('truetype');
-	src: url('./fonts/IBMPlexSans-Regular.woff2') format('woff2');
-	font-weight: 400;
-	font-display: swap;
+  font-family: "IBMPlexSans";
+  src: url("./fonts/IBMPlexSans-Regular.ttf") format("truetype");
+  src: url("./fonts/IBMPlexSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'IBMPlexSansCondensed';
-	src: url('./fonts/IBMPlexSansCondensed-Medium.ttf') format('truetype');
-	src: url('./fonts/IBMPlexSansCondensed-Medium.woff2') format('woff2');
-	font-weight: 600;
-	font-display: swap;
+  font-family: "IBMPlexSansCondensed";
+  src: url("./fonts/IBMPlexSansCondensed-Medium.ttf") format("truetype");
+  src: url("./fonts/IBMPlexSansCondensed-Medium.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'IBMPlexSansCondensed';
-	src: url('./fonts/IBMPlexSansCondensed-Bold.ttf') format('truetype');
-	src: url('./fonts/IBMPlexSansCondensed-Bold.woff2') format('woff2');
-	font-weight: 700;
-	font-display: swap;
+  font-family: "IBMPlexSansCondensed";
+  src: url("./fonts/IBMPlexSansCondensed-Bold.ttf") format("truetype");
+  src: url("./fonts/IBMPlexSansCondensed-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
 }
 
 :root {
-	--font-family-heading: 'IBMPlexSansCondensed', Arial;
-	--font-family-copy: 'IBMPlexSans', sans-serif;
+  --font-family-heading: "IBMPlexSansCondensed", Arial;
+  --font-family-copy: "IBMPlexSans", sans-serif;
 
-	/* Shopify variables */
-	--font-heading-family: var(--font-family-heading);
-	--font-heading-weight: 700;
-	--font-body-family: var(--font-family-copy);
+  /* Shopify variables */
+  --font-heading-family: var(--font-family-heading);
+  --font-heading-weight: 700;
+  --font-body-family: var(--font-family-copy);
+}
+
+@layer components {
+  .btn {
+    @apply text-secondary-light dark:text-secondary-dark bg-primary-light dark:bg-primary-dark focus-visible:outline-primary-light dark:focus-visible:outline-primary-dark outline-offset-4 inline-block px-6 py-2.5 font-heading text-base font-bold uppercase underline-offset-4 hover:underline focus-visible:shadow-none focus-visible:outline;
+  }
 }
