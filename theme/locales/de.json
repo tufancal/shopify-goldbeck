@@ -121,7 +121,7 @@
         "note": "Mengenregeln anzeigen"
       },
       "price": {
-        "from_price_html": "ab {{ price }}",
+        "from_price_html": "Von {{ price }}",
         "regular_price": "Normaler Preis",
         "sale_price": "Verkaufspreis",
         "unit_price": "Stückpreis"
@@ -206,7 +206,8 @@
       "clear_filter": "Filter entfernen",
       "filter_selected_accessibility": "{{ type }} ({{ count }} Filter ausgewählt)",
       "show_more": "Mehr anzeigen",
-      "show_less": "Weniger anzeigen"
+      "show_less": "Weniger anzeigen",
+      "filter_and_operator_subtitle": "Allen entsprechen"
     }
   },
   "templates": {
